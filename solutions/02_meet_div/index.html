@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="In this lesson we will learn about the html tag div">
+      <title>Meet div</title>
+      <style>
+        h1 {
+          background: red;
+          padding: 2em;
+          /*padding-top: 2em;*/
+          /*padding-right: 2em;*/
+          /*padding-bottom: 2em;/*/
+          /*padding-left: 2em;*/
+          border: 2px solid black;
+          /*border-width: 2px;*/
+          /*border-style: solid;*/
+          /*border-color: black;*/
+        }
+
+        h1:last-of-type {
+          height: 60px;
+          width: 60px;
+          border-radius: 50%;
+          margin: 0 auto;
+        }
+
+
+        p {
+          background: blue;
+          color: white;
+          padding: 1em;
+          border: 1em double black;
+        }
+
+        code {
+          background: white;
+          color: black;
+          padding: 2px;
+          margin: 0 2px;
+          border: 1px solid black;
+        }
+
+        ol {
+          background: greenyellow;
+          padding: 0 40px;
+          /*padding-top: 0;*/
+          /*padding-right: 40px;*/
+          /*padding-bottom: 0;*/
+          /*padding-left: 40px;*/
+          border: 1px solid greenyellow;
+
+        }
+
+        li {
+          list-style: square;
+          padding-top:8px;
+          padding-bottom:8px;
+          padding-left: 8px;
+          background: lightgrey;
+        }
+
+        li + li {
+          border-top: 2px dashed greenyellow;
+        }
+
+        /* BOX MODEL DIAGRAM */
+        div {
+          background: purple;
+          color: white;
+          width: 50%;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        div div {
+          background: red;
+        }
+
+        div div div {
+          background: orange;
+        }
+
+        div div div div {
+          background: yellow;
+          color: grey;
+        }
+
+      </style>
+  </head>
+  <body>
+    <h1>What do these tags have in common?</h1>
+    <h2>I'm an h2!</h2>
+    <blockquote>I am pithy blockquote.</blockquote>
+    <p>I am a short paragraph. Catch me on a good day and I can really go on and on though, let me tell you! When I get to the edge of the page I just wrap around and boom! I pop out on the other side and just keep chugging along. Good times, man.</p>
+    <ul>
+      <li>I'm a list item inside of a ul! </li>
+    </ul>
+    
+    <p>Answer: "display: block;"</p>
+
+
+    <h1>Box Model</h1>
+    <p>Every element on the page has its own box, which can be styled using CSS.</p>
+    <p>From the inside out:</p>
+    <ol>
+      <li>content</li>
+      <li>padding</li>
+      <li>border</li>
+      <li>margin</li>
+    </ol>
+
+    <h2>Background</h2>
+    <p>Keep in mind that a <code>background</code> will cover the content and the padding.</p>
+
+    <h2>Together</h2>
+    <ol>
+      <li>Give the <code>h1</code> a red background, some padding, and a black border.</li>
+      <li>Give every <code>p</code> a blue background, white text, some padding, and a black border.</li>
+      <li>Give every <code>code</code> element a white background, black text, a little padding, and a thin border.</li>
+    </ol>
+
+    <h2>Now You Try</h2>
+    <ol>
+      <li>Try adding styles for the <code>h2</code>s, <code>ol</code>s, and <code>li</code>s on this page.</li>
+      <li>Look into the syntax for <code>margin</code> and try adding more space around elements by using them.</li>
+      <li>Feeling good? Create your own diagram of box model in the space below.</li>
+    </ol>
+
+    <div>
+      margin
+      <div>
+        border
+        <div>
+          padding
+          <div>content</div>
+          padding
+        </div>
+        border
+      </div>
+      margin
+    </div>
+
+
+  </body>
+</html>

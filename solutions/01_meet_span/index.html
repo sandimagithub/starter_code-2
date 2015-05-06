@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="In this lesson we will learn about the html tag span and how to nest css selectors">
+  <title>Meet span</title>
+  <style>
+
+    div {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .strike {
+      text-decoration: line-through;
+      color: red;
+    }
+
+    .vocab {
+      font-family: monospace;
+    }
+
+    .shout {
+      text-transform: uppercase;
+    }
+
+    .big {
+      font-size: 2em;
+    }
+
+    .small {
+      font-size: .5em;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div>
+
+    <h2>What do these tags have in common?</h2>
+    <img src="http://lorempixel.com/100/100/cats/8/"/>
+    <strong>I am bold!</strong>
+    <em>I'm italic!</em>
+    <a href="">I'm a link</a>
+    <small>I'm small</small>
+
+    <h3>Answer: "display: inline;"</h3>
+
+    <h2>Make your own!</h2>
+    <p>Use the following descriptions to come up with new styles.</p>
+    1) <span class="strike">This text is red with a strike through it. Did I do something wrong?</span>
+    2) <span>It's helpful to style technical term like <span class="vocab">tag</span> and <span class="vocab">property</span> with a typewriter font, so they stand out.</span>
+    3) <span class="shout">You make me wanna <span>shout</span>! (in all caps)</span>
+    4) <span class="big">I'm twice as big as everyone else!</span>
+    5) <span class="small">I'm twice as small...</span>
+
+    <h2 class="strike vocab shout big">Create your own</h2>
+    <p>It's time to move out of the console and into your stylesheet.  How are we going to differentiate one style from another!? How are we going to apply them to multiple elements?</p>
+
+    .strike <br/>
+    .vocab <br/>
+    .shout <br/>
+    .big <br/>
+    .small <br/>
+
+  </div>
+</body>
+</html>
